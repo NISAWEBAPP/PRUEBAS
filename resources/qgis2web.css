@@ -280,15 +280,14 @@ td video {
   }
 
 
- .geolocate {
- position: relative !important;
- float: left;
- top: unset !important;
- left: unset !important;
- margin-top: 8px;
- margin-left: 8px;
+.geolocate {
+    position: relative !important;
+    float: right;      /* Changed from left to right */
+    top: unset !important;
+    left: unset !important;
+    margin-bottom: 8px; /* Space from the bottom edge */
+    margin-right: 8px;  /* Space from the right edge */
 }
-
 
 .ol-geocoder.gcd-gl-container {
     position: relative !important;
@@ -440,4 +439,5 @@ td video {
     -webkit-font-smoothing: antialiased;
     z-index: 1000; /* Added to ensure labels stay above polygons */
 }
+
 /* --- END OF CUSTOM CODE --- */
