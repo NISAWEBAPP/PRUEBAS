@@ -1119,9 +1119,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     geolocateButton.addEventListener('click', toggleTracking);
     
-    // Ensure the button is placed in your top-left container if you have one
-    var topLeft = document.getElementById('top-left-container');
-    if (topLeft) { topLeft.appendChild(geolocateControl); }
+   // Ensure the button is placed in your top-left container if you have one
+var topLeft = document.getElementById('top-left-container');
+if (topLeft) { topLeft.appendChild(geolocateControl); }
 })();
 //measurement
     //measure
@@ -1148,4 +1148,5 @@ document.addEventListener('DOMContentLoaded', function() {
     var attributionControl = document.getElementsByClassName('bottom-attribution')[0];
     if (attributionControl) {
         bottomRightContainerDiv.appendChild(attributionControl);
+
     }
