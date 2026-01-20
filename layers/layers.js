@@ -152,7 +152,7 @@ var lyr_MANZANAS_7 = new ol.layer.Vector({
             });
 
 lyr_FRACCION_0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr_MAPA_2.setVisible(true);lyr_Combinado_3.setVisible(true);lyr_FRACCIONcopiar_4.setVisible(true);lyr_fraccion_5.setVisible(true);lyr_NOMBREFRACCION_6.setVisible(true);lyr_MANZANAS_7.setVisible(true);
-var layersList = [lyr_FRACCION_0,lyr_OpenStreetMap_1,lyr_MAPA_2,lyr_Combinado_3,lyr_FRACCIONcopiar_4,lyr_fraccion_5,lyr_NOMBREFRACCION_6,lyr_MANZANAS_7];
+var layersList = [lyr_FRACCION_0,lyr_OpenStreetMap_1,lyr_MAPA_2,lyr_OpenTopoMap_2,lyr_Combinado_3,lyr_FRACCIONcopia_4,lyr_fraccion_5,lyr_NOMBREFRACCION_6,lyr_MANZANAS_7];
 lyr_FRACCION_0.set('fieldAliases', {'FRACCIONES_Código - Nombre de Fracción': 'FRACCIONES_Código - Nombre de Fracción', });
 lyr_Combinado_3.set('fieldAliases', {'ID': 'ID', 'Manzana': 'Manzana', 'Lote': 'Lote', 'Superficie': 'Superficie', 'Estado': 'Estado', 'Cuota': 'Cuota', 'Total': 'Total', 'Descuento': 'Descuento', 'Contado': 'Contado', 'Entrega': 'Entrega', 'ID 3': 'ID 3', });
 lyr_FRACCIONcopiar_4.set('fieldAliases', {'FRACCION': 'FRACCION', 'FRACCIONES_Código - Nombre de Fracción': 'FRACCIONES_Código - Nombre de Fracción', });
