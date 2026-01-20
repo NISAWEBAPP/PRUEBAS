@@ -1129,8 +1129,9 @@ watchId = navigator.geolocation.watchPosition(function(pos) {
     geolocateButton.addEventListener('click', toggleTracking);
     
     // Ensure the button is placed in your top-left container if you have one
-    var topLeft = document.getElementById('top-left-container');
-    if (topLeft) { topLeft.appendChild(geolocateControl); }
+  // Change this to the bottom-right container
+var bottomRight = document.getElementById('bottom-right-container');
+if (bottomRight) { bottomRight.appendChild(geolocateControl); }
 })();
 //measurement
     //measure
@@ -1159,3 +1160,4 @@ watchId = navigator.geolocation.watchPosition(function(pos) {
         bottomRightContainerDiv.appendChild(attributionControl);
 
     }
+
