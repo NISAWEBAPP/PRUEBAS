@@ -98,5 +98,51 @@
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>        
+   <script>
+        (function() {
+            const version = new Date().getTime(); // Creates a unique ID based on the current time
+            
+            const scripts = [
+                "resources/qgis2web_expressions.js",
+                "resources/functions.js",
+                "resources/ol.js",
+                "resources/horsey.min.js",
+                "resources/ol-search-layer.js",
+                "resources/ol-layerswitcher.js",
+                "resources/photon-geocoder-autocomplete.min.js",
+                "layers/FRACCION_0.js",
+                "layers/Combinado_3.js",
+                "layers/FRACCIONcopiar_4.js",
+                "layers/fraccion_5.js",
+                "layers/NOMBREFRACCION_6.js",
+                "layers/MANZANAS_7.js",
+                "styles/FRACCION_0_style.js",
+                "styles/Combinado_3_style.js",
+                "styles/FRACCIONcopiar_4_style.js",
+                "styles/fraccion_5_style.js",
+                "styles/NOMBREFRACCION_6_style.js",
+                "styles/MANZANAS_7_style.js",
+                "layers/layers.js",
+                "resources/Autolinker.min.js",
+                "resources/qgis2web.js"
+            ];
+
+            // This function loads each script one by one in the correct order
+            function loadScripts(index) {
+                if (index < scripts.length) {
+                    const s = document.createElement('script');
+                    s.src = scripts[index] + "?v=" + version;
+                    s.async = false; // Ensures they load in the exact order qgis2web needs
+                    s.onload = function() {
+                        loadScripts(index + 1);
+                    };
+                    document.body.appendChild(s);
+                }
+            }
+
+            loadScripts(0);
+        })();
+    </script>
     </body>
+
 </html>
