@@ -443,3 +443,17 @@ td video {
     z-index: 1000; /* Added to ensure labels stay above polygons */
 }
 /* --- END OF CUSTOM CODE --- */
+
+/* --- TAMAÑO DE BOTONES PARA MÓVILES --- */
+.ol-control button {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.3em !important;
+    cursor: pointer;
+}
+
+/* Ajuste específico para la barra de búsqueda para que no quede pequeña */
+.search-layer-input-search {
+    height: 38px !important;
+    font-size: 14px !important;
+}
